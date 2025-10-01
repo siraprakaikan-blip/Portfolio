@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+body{
+    background-color: rgb(36, 35, 35);
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    font-family: kanit;
+}
+
+.Myportfolio {
+    background-color: rgb(51, 51, 51);
+    margin: 0px;
+    height: 50px;
+    box-shadow: 0 4px 6px -4px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+
+nav span{
+    margin: 0px;
+    color: rgb(255, 255, 255);
+    height: 50px;
+    flex: start;
+    justify-content: center;
+    align-content: center;
+}
+
+ul{
+    display: flex;
+    gap: 35px;
+}
+
+/* Global */
+*{ box-sizing: border-box; }
+html{ scroll-behavior: smooth; }
+body{ color: #e5e5e5; }
+a{ color: #e5e5e5; text-decoration: none; }
+ul{ list-style: none; margin: 0; padding: 0; }
+
+.menu a{ 
+    opacity: 0.8; 
+    transition: opacity .2s ease, color .2s ease; 
+}
+
+.menu a:hover{ 
+    opacity: 1; 
+    color: #8ab4f8; 
+}
+
+.container{ 
+    width: min(1100px, 92%); 
+    margin: 0 auto; 
+}
+
+.Contact-Container {
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.facebook-contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.line-contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.number-contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.instagarm-contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.gmail-contact {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-bottom: 5px;
+}
+
+.section{ 
+    padding: 72px 0; 
+    border-bottom: 1px solid rgba(255,255,255,.06); 
+}
+
+/* Hero */
+.hero{ 
+    display: flex; 
+    align-items: center; 
+    min-height: 68vh; 
+    background: linear-gradient(180deg, rgba(0,0,0,.2), rgba(0,0,0,0)); 
+}
+
+.title{ 
+    font-size: 40px; 
+    font-weight: 700; 
+    margin: 0 0 8px; 
+}
+
+.subtitle{ 
+    color: #bdbdbd; 
+    margin: 0 0 10px; 
+}
+
+.accent{ 
+    color: #8ab4f8; 
+}
+
+.btn{ 
+    display: inline-block; 
+    padding: 10px 18px; 
+    border-radius: 8px; 
+    border: 1px solid rgba(255,255,255,.12); 
+    transition: background .2s ease, color .2s ease, border-color .2s ease; 
+
+}
+.btn.primary{ 
+    background: #8ab4f8; color: #0b0e14; border-color: #8ab4f8; 
+}
+
+.btn.primary:hover{ 
+    background: #9cc0fb; 
+}
+
+.btn.secondary{ 
+    background: transparent; color: #e5e5e5; 
+}
+
+.btn.secondary:hover{ 
+    border-color: #8ab4f8; color: #8ab4f8; 
+}
+
+/* About */
+.grid{ 
+    display: grid; 
+    grid-template-columns: 1.2fr .8fr; 
+    gap: 32px; 
+    align-items: center; 
+}
+
+.about-text h2, .skills h2, .contact h2{ 
+    margin: 0 0 16px; 
+}
+
+.about-text p{ 
+    color: #c7c7c7; line-height: 1.7; 
+}
+
+.about-media img{ 
+    width: 100%; 
+    max-width: 340px; 
+    border-radius: 12px; 
+    display: block; 
+    box-shadow: 0 4px 6px -4px rgba(0, 0, 0, 0.4); 
+}
+
+
+/* Skills */
+.skill-list{ 
+    display: flex; 
+    grid-template-columns: 1fr; 
+    gap: 50px; 
+    flex-wrap: wrap;
+}
+
+.skill-list > div {
+    width: calc(25% - 45px); /* 4 อันต่อแถว */
+}
+
+.skill-item{ 
+    background: rgba(255,255,255,.04); 
+    border: 1px solid rgba(255,255,255,.06); 
+    padding: 14px; 
+    border-radius: 10px; 
+}
+
+.skill-item .label{ 
+    margin-bottom: 8px; 
+    font-weight: 600; 
+}
+
+.skill-item .bar{ 
+    height: 8px; 
+    background: rgba(255,255,255,.08); 
+    border-radius: 999px; 
+    overflow: hidden; 
+}
+
+.skill-item .bar span{ 
+    display: block; 
+    height: 100%; 
+    background: linear-gradient(90deg, #8ab4f8, #7fc1ca); 
+    border-radius: 999px; 
+}
+
+
+/* Contact */
+.contact-form{ 
+    display: grid; 
+    gap: 12px; 
+}
+
+.contact-form .row{ 
+    display: grid; 
+    grid-template-columns: 1fr 1fr; gap: 12px; 
+}
+
+.contact-form input, .contact-form textarea{ 
+    background: rgba(255,255,255,.06); 
+    border: 1px solid rgba(255,255,255,.12); 
+    color: #e5e5e5; padding: 12px 14px; border-radius: 8px; outline: none; 
+}
+
+.contact-form input:focus, .contact-form textarea:focus{ 
+    border-color: #8ab4f8; 
+}
+
+
+/* Navbar spacing */
+.Myportfolio{ 
+    position: sticky; 
+    top: 0; 
+    z-index: 100; 
+    padding: 0 24px;
+}
+
+nav span{ 
+    font-weight: 700; 
+    letter-spacing: .3px; 
+    display: flex; 
+    align-items: center; 
+}
+
+
+/* Responsive */
+@media (max-width: 900px){
+  .grid{ grid-template-columns: 1fr; }
+  .about-media{ order: -1; }
+}
+
+@media (max-width: 600px){
+  .title{ font-size: 32px; }
+  .contact-form 
+  .row{ grid-template-columns: 1fr; }
+}
+
+.avatar {
+    border-radius: 50%;
+    width: 350px;
+    height: 350px;
+    position: absolute;
+    left: 60%;
+    top: 25%;
+    border-style: solid;
+    border-color: white;
+    box-shadow: 0 4px 15px rgba(90, 90, 90, 0.5);
+}
+
+.html {
+    width: 100px;
+    height: 100px;
+
+}
+
+
+.html-logo {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+}
+
+.css-logo {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+}
+
+.photoshop-logo {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+    size: 25px;
+}
+.aftereffect-logo {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+}
+.powerpoint-logo {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+}
+.word-logo {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+}
+.lightroom-logo {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+}
+.canva-logo {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+}
+
+.line-logo {
+    border-style: solid;
+    width: 150px;
+    height: 150px;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-width: 3px;
+}
+
+
+.css {
+    width: 100px;
+    height: 100px;
+
+}
+
+.photoshop {
+    width: 100px;
+    height: 100px;
+
+}
+
+.aftereffect {
+    width: 100px;
+    height: 100px;
+
+}
+
+.canva {
+    width: 100px;
+    height: 100px;
+
+}
+
+.powerpoint {
+    width: 100px;
+    height: 100px;
+
+}
+
+.word {
+    width: 100px;
+    height: 100px;
+
+}
+
+.lightroom {
+    width: 100px;
+    height: 100px;
+
+}
+
