@@ -266,6 +266,8 @@ nav span{
     width: 350px;
     height: 350px;
     position: absolute;
+    object-fit: cover;
+    object-position: 100% 11%;
     left: 60%;
     top: 25%;
     border-style: solid;
@@ -452,3 +454,4 @@ select, input {
 .tawgub {
     font-size: 40px;
 }
+
